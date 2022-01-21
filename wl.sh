@@ -128,16 +128,13 @@ main(){
     clear
     init
 
-
     echo "...................."
     echo "Watching at isp_again > ${again_high_target} to LED ON"
     echo "Watching at isp_again < ${again_low_target} to LED OFF"
     echo "Polling interval: ${pollingInterval} sec"
     echo "...................."
 
-
-
-    while true; do
+   while true; do
 
             get_led_status && \
             [ $led_state == 1 ] && \
@@ -165,6 +162,5 @@ main(){
             echo "...................."                                                                          
     done
 }
-
 
 main
