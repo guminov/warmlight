@@ -120,8 +120,6 @@ init(){
     sleep 2
     again_led_on=$(curl -s http://localhost/metrics | grep ^isp_again | cut -d' ' -f2)
     echo "A_GAIN with led on: ${again_led_on}"
-
-
 }
 
 main(){
